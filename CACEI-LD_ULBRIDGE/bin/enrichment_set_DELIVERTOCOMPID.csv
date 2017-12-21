@@ -1,0 +1,12 @@
+Broker_Knight,option,KCG_DER
+Broker_Knight,future,KCG_DER
+Broker_Knight,*,KCG_EQ
+Broker_Citigroup,option,CITI_DER
+Broker_Citigroup,future,CITI_DER
+Broker_Citigroup,multileg,CITI_DER
+Broker_Citigroup,*,CITI_EQ
+Broker_UBS,*,UBS
+Broker_MS,*,MS
+Broker_GS,option,GS_DER
+Broker_GS,future,GS_DER
+Broker_GS,*,GS_EQ

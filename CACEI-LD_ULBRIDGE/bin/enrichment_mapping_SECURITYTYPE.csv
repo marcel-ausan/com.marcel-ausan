@@ -1,0 +1,9 @@
+MRXXXX,*,multileg
+*,NONE,equity
+*,FUT,future
+*,OPT,option
+*,equity,equity
+*,future,future
+*,option,option
+*,CS,equity
+*,PS,equity

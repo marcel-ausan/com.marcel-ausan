@@ -1,0 +1,21 @@
+0174143000,*,future,Broker_Citigroup,broker
+0174143000,*,option,Broker_Citigroup,broker
+0174143000,*,multileg,Broker_Citigroup,broker
+0224446000,ERROR EQU PFS,future,Broker_Citigroup,broker
+0224446000,ERROR EQU PFS,option,Broker_Citigroup,broker
+0224446000,ERROR EQU PFS,multileg,Broker_Citigroup,broker
+0602166000,*,future,Broker_Citigroup,broker
+0602166000,*,option,Broker_Citigroup,broker
+0602166000,*,multileg,Broker_Citigroup,broker
+0604258000,*,future,Broker_Citigroup,broker
+0604258000,*,option,Broker_Citigroup,broker
+0604258000,*,multileg,Broker_Citigroup,broker
+0621215405,*,future,Broker_Citigroup,broker
+0621215405,*,option,Broker_Citigroup,broker
+0621215405,*,multileg,Broker_Citigroup,broker
+0099058000,*,future,Broker_Citigroup,broker
+0099058000,*,option,Broker_Citigroup,broker
+0099058000,*,multileg,Broker_Citigroup,broker
+0621277275,*,future,Broker_Citigroup,broker
+0621277275,*,option,Broker_Citigroup,broker
+0621277275,*,multileg,Broker_Citigroup,broker
