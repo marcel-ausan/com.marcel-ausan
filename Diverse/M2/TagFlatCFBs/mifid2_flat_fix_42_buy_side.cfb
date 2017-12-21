@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<cplugin-configuration type="com.ullink.ulbridge2.toolkit.plugins.fix.model.state.cblock.BuySideFIXCPluginCBlock" version="1.0" fix-version="4.2">
+    <history>
+    </history>
+    <cvs-revision>$Revision: 1.0$ $Date: 2017/03/15 13:00:00 $</cvs-revision>
+    <description>CFB 4.2 extension for MiFID II flat tags</description>
+
+    <message-types/>
+    <inbound-message-type-mappings/>
+    <outbound-message-type-mappings/>
+
+    <vocabulary>
+        <vocabulary-tag name="8013" alt="TrdRegPublicationReasons" type="string"/>
+		<vocabulary-tag name="8014" alt="TradePriceConditions" type="string"/>
+		<vocabulary-tag name="8015" alt="OrderAttributeTypes" type="string"/>
+		<vocabulary-tag name="8016" alt="TradingVenueRegulatoryTradeID" type="string"/>
+		<vocabulary-tag name="20001" alt="PartyIDExecutingFirm" type="string"/>
+		<vocabulary-tag name="20003" alt="PartyIDClientID" type="string"/>
+		<vocabulary-tag name="20011" alt="PartyIDOrderOriginationTrader" type="string"/>
+		<vocabulary-tag name="20012" alt="PartyIDExecutingTrader" type="string"/>
+		<vocabulary-tag name="20013" alt="PartyIDOrderOriginationFirm/PartyIDClientID" type="string"/>
+		<vocabulary-tag name="20017" alt="PartyIDContraFirm" type="string"/>
+		<vocabulary-tag name="20021" alt="PartyIDClearingOrganisation" type="string"/>
+		<vocabulary-tag name="20022" alt="PartyIDExchange" type="string"/>
+		<vocabulary-tag name="20063" alt="PartyIDSystematicInternaliser" type="string"/>
+		<vocabulary-tag name="20073" alt="PartyIDExecutionVenue" type="string"/>
+		<vocabulary-tag name="20122" alt="PartyIDInvestmentDecisionMaker" type="string"/>
+		<vocabulary-tag name="20123" alt="PartyIDPublishingIntermediary" type="string"/>
+	</vocabulary>
+
+    <grammar-binding type="8" merge-mode="update|ignore">
+        <grammar checkordering="false">
+            <tag-constraint name="8013" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="8014" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="8015" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="8016" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20001" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20003" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20011" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20012" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20013" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20017" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20021" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20022" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20063" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20073" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20122" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20123" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+		</grammar>
+    </grammar-binding>
+
+    <grammar-binding type="D" merge-mode="update|ignore">
+        <grammar checkordering="false">
+            <tag-constraint name="8013" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="8014" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="8015" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="8016" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20001" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20003" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20011" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20012" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20013" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20017" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20021" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20022" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20063" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20073" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20122" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20123" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+		</grammar>
+    </grammar-binding>
+
+    <grammar-binding type="F" merge-mode="update|ignore">
+        <grammar checkordering="false">
+            <tag-constraint name="8013" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="8014" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="8015" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="8016" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20001" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20003" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20011" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20012" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20013" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20017" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20021" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20022" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20063" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20073" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20122" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20123" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+		</grammar>
+    </grammar-binding>
+
+    <grammar-binding type="G" merge-mode="update|ignore">
+        <grammar checkordering="false">
+            <tag-constraint name="8013" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="8014" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="8015" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="8016" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20001" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20003" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20011" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20012" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20013" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20017" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20021" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20022" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20063" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20073" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20122" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+			<tag-constraint name="20123" part="body" required="false">
+                <string-validity regexp=".*" domain="all-values" />
+            </tag-constraint>
+		</grammar>
+    </grammar-binding>
+
+    <normalization-binding type="8" merge-mode="update|ignore">
+        <normalization type="inbound">
+            <tag-normalization tag-name="FIX.8013" part="body">
+                <mapping-expression>
+                    <expression value="$8013"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="FIX.8014" part="body">
+                <mapping-expression>
+                    <expression value="$8014"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="FIX.8015" part="body">
+                <mapping-expression>
+                    <expression value="$8015"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="FIX.8016" part="body">
+                <mapping-expression>
+                    <expression value="$8016"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="FIX.20001" part="body">
+                <mapping-expression>
+                    <expression value="$20001"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="FIX.20003" part="body">
+                <mapping-expression>
+                    <expression value="$20003"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="FIX.20011" part="body">
+                <mapping-expression>
+                    <expression value="$20011"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="FIX.20012" part="body">
+                <mapping-expression>
+                    <expression value="$20012"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="FIX.20013" part="body">
+                <mapping-expression>
+                    <expression value="$20013"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="FIX.20017" part="body">
+                <mapping-expression>
+                    <expression value="$20017"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="FIX.20021" part="body">
+                <mapping-expression>
+                    <expression value="$20021"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="FIX.20022" part="body">
+                <mapping-expression>
+                    <expression value="$20022"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="FIX.20063" part="body">
+                <mapping-expression>
+                    <expression value="$20063"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="FIX.20073" part="body">
+                <mapping-expression>
+                    <expression value="$20073"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="FIX.20122" part="body">
+                <mapping-expression>
+                    <expression value="$20122"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="FIX.20123" part="body">
+                <mapping-expression>
+                    <expression value="$20123"/>
+                </mapping-expression>
+            </tag-normalization>
+		</normalization>
+    </normalization-binding>
+
+    <normalization-binding type="D" merge-mode="update|ignore">
+        <normalization type="outbound">
+			<tag-normalization tag-name="8013" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.8013"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="8014" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.8014"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="8015" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.8015"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="8016" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.8016"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20001" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20001"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20003" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20003"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20011" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20011"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20012" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20012"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20013" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20013"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20017" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20017"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20021" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20021"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20022" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20022"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20063" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20063"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20073" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20073"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20122" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20122"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20123" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20123"/>
+                </mapping-expression>
+            </tag-normalization>
+		</normalization>
+    </normalization-binding>
+
+    <normalization-binding type="F" merge-mode="update|ignore">
+        <normalization type="outbound">
+            <tag-normalization tag-name="8013" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.8013"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="8014" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.8014"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="8015" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.8015"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="8016" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.8016"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20001" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20001"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20003" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20003"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20011" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20011"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20012" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20012"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20013" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20013"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20017" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20017"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20021" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20021"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20022" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20022"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20063" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20063"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20073" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20073"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20122" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20122"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20123" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20123"/>
+                </mapping-expression>
+            </tag-normalization>
+		</normalization>
+    </normalization-binding>
+
+    <normalization-binding type="G" merge-mode="update|ignore">
+        <normalization type="outbound">
+            <tag-normalization tag-name="8013" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.8013"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="8014" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.8014"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="8015" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.8015"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="8016" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.8016"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20001" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20001"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20003" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20003"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20011" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20011"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20012" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20012"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20013" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20013"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20017" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20017"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20021" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20021"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20022" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20022"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20063" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20063"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20073" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20073"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20122" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20122"/>
+                </mapping-expression>
+            </tag-normalization>
+			<tag-normalization tag-name="20123" part="body">
+                <mapping-expression>
+                    <expression value="$FIX.20123"/>
+                </mapping-expression>
+            </tag-normalization>
+		</normalization>
+    </normalization-binding>
+
+    <reject-binding/>
+    <flow-filter-binding/>
+
+    <maps>
+    </maps>
+</cplugin-configuration>
